@@ -1,0 +1,2 @@
+module Dynamite
+end
