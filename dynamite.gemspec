@@ -7,11 +7,11 @@ require "dynamite/version"
 Gem::Specification.new do |s|
   s.name        = "dynamite"
   s.version     = Dynamite::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Dynamite."
-  s.description = "TODO: Description of Dynamite."
+  s.authors     = ["Leanbid Ltd"]
+  s.email       = ["it@leanbid.com"]
+  s.homepage    = "https://github.com/PS-Computer-Services-Ltd/dynamite"
+  s.summary     = "Dynamic form schema builder"
+  s.description = "Build forms insde your browser"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
