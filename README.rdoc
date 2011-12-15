@@ -1,3 +1,14 @@
 = Dynamite
 
+==Usage
+To use it in your application, just include this gem in your Gemfile:
+
+gem 'dynamite'
+And then, in your app/assets/javascripts/application.js:
+
+//= require dynamite
+
+
+==License
+
 This project rocks and uses MIT-LICENSE.
