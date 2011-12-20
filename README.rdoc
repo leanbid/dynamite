@@ -11,4 +11,5 @@ And then, in your app/assets/javascripts/application.js:
 
 ==License
 
-This project rocks and uses MIT-LICENSE.
+COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0
+Copyright Leanbid Ltd 2012
