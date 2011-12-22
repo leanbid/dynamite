@@ -4,9 +4,12 @@
 To use it in your application, just include this gem in your Gemfile:
 
 gem 'dynamite'
-And then, in your app/assets/javascripts/application.js:
 
-//= require dynamite
+Then in your rails app's root directory type:
+
+rails dynamite:install
+rake db:migrate
+
 
 
 ==License
