@@ -8,6 +8,7 @@ gem 'dynamite'
 Then in your rails app's root directory type:
 
 rails dynamite:install
+
 rake db:migrate
 
 
