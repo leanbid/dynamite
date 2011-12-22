@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Dynamite::VERSION
   s.authors     = ["Leanbid Ltd"]
   s.email       = ["it@leanbid.com"]
-  s.homepage    = "https://github.com/PS-Computer-Services-Ltd/dynamite"
+  s.homepage    = "https://github.com/leanbid/dynamite"
   s.summary     = "Dynamic form schema builder"
   s.description = "Build forms insde your browser"
   s.license = "CDDL"
@@ -19,5 +19,4 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 3.1.3"
 
-  s.add_development_dependency "sqlite3"
 end
