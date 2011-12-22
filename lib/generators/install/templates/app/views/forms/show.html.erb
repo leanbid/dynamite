@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @form.name %>
+</p>
+
+<p>
+  <b>Schema:</b>
+  <%= @form.schema %>
+</p>
+
+<%= link_to 'Add Submission', new_form_submission_path(:form_id => @form.id) %> |
+<%= link_to 'Edit', edit_form_path(@form) %> |
+<%= link_to 'Back', forms_path %>

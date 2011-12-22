@@ -1,0 +1,21 @@
+<%= form_for(@form_submission) do |f| %>
+  <% if @form_submission.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@form_submission.errors.count, "error") %> prohibited this form_submission from being saved:</h2>
+
+      <ul>
+      <% @form_submission.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.hidden_field :form_schema_id %>
+  
+  <%= f.dynamite_inputs %>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

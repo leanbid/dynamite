@@ -1,0 +1,13 @@
+<div class="field">
+  <% if is_error %>
+    <div class="field_with_errors">
+      <%= label_tag(input['label'])%>
+    </div><br />
+    <div class="field_with_errors">
+      <%= text_area_tag(name.to_s + "[vars][" + input['label'] + "]", value, :rows => 10, :cols => 50) %>
+    </div>
+  <% else %>
+    <%= label_tag(input['label'])%><br />
+    <%= text_area_tag(name.to_s + "[vars][" + input['label'] + "]", value, :rows => 10, :cols => 50) %>
+  <% end %>
+</div>

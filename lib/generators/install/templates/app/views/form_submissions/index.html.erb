@@ -1,0 +1,24 @@
+<h1>&quot;<%= @form.name %>&quot; Form Submissions</h1>
+
+<table>
+  <tr>
+    <th>Vars</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @form_submissions.each do |form_submission| %>
+  <tr>
+    <td><%= form_submission.vars %></td>
+    <td><%= link_to 'Show', form_submission %></td>
+    <td><%= link_to 'Edit', edit_form_submission_path(form_submission) %></td>
+    <td><%= link_to 'Destroy', form_submission, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Form submission', new_form_submission_path(:form_id => @form.id) %> |
+<%= link_to 'Back', forms_path %>

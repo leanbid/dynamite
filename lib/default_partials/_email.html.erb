@@ -1,0 +1,13 @@
+<div class="field">
+  <% if is_error %>
+    <div class="field_with_errors">
+      <%= label_tag(input['label'])%>
+    </div><br />
+    <div class="field_with_errors">
+      <%= email_field_tag(name.to_s + "[vars][" + input['label'] + "]", value) %>
+    </div>
+  <% else %>
+    <%= label_tag(input['label'])%><br />
+    <%= email_field_tag(name.to_s + "[vars][" + input['label'] + "]", value) %>
+  <% end %>
+</div>

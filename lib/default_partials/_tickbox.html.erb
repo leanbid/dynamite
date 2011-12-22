@@ -1,0 +1,13 @@
+<div class="field">
+  <% if is_error %>
+    <div class="field_with_errors">
+      <%= label_tag(input['label'])%>
+    </div><br />
+    <div class="field_with_errors">
+      <%= check_box_tag(name.to_s + "[vars][" + input['label'] + "]", 1, !value.nil?) %>
+    </div>
+  <% else %>
+    <%= label_tag(input['label'])%><br />
+    <%= check_box_tag(name.to_s + "[vars][" + input['label'] + "]", 1, !value.nil?) %>
+  <% end %>
+</div>
